@@ -24,18 +24,17 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 font-thai ${
-        isScrolled
-          ? 'bg-brand-dark/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 font-thai ${isScrolled
+        ? 'bg-brand-dark/95 backdrop-blur-md shadow-lg py-3'
+        : 'bg-transparent py-5'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-brand-gold p-1.5 rounded-lg">
-              <ShieldCheck className="h-6 w-6 text-brand-dark" />
+            <div className="h-12 w-12">
+              <img src="/pics/logo.png" alt="Logo" />
             </div>
             <div className={`font-thai font-bold text-xl tracking-tight ${isScrolled ? 'text-white' : 'text-white'}`}>
               <span className="text-brand-gold">S&P</span> INTER GUARD
@@ -53,7 +52,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            
+
             {/* Language Toggle */}
             <button
               onClick={toggleLang}
