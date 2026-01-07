@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&P INTER GUARD - Smart Security Thailand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans Thai"', 'sans-serif'],
+              thai: ['"Noto Sans Thai"', 'sans-serif'], 
+            },
+            colors: {
+              brand: {
+                dark: '#0f172a', // Slate 900
+                blue: '#1e3a8a', // Blue 900
+                gold: '#fbbf24', // Amber 400
+                accent: '#3b82f6', // Blue 500
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Noto Sans Thai', sans-serif;
+      }
+      .font-thai {
+        font-family: 'Noto Sans Thai', sans-serif !important;
+      }
+      /* GSAP will handle initial hidden states via its from() method, 
+         but we set initial opacity 0 for elements that will be animated to prevent flash of unstyled content. */
+      .gsap-reveal {
+        opacity: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "gsap": "https://esm.sh/gsap@3.12.5"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
